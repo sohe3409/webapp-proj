@@ -1,0 +1,100 @@
+@import 'style/normalize.min';
+@import 'style/vars';
+@import 'style/button';
+@import 'style/containers';
+@import 'style/nav';
+@import 'style/form';
+@import 'style/table';
+
+body {
+    font-family: $text;
+}
+
+h1 {
+    font-size: 2.8rem;
+}
+
+.title {
+    font-family: $title;
+    font-size: 2rem;
+    margin-top: 0;
+    color: #000;
+}
+
+.titleDiv {
+    padding: 0.5em;
+    display: flex;
+    border-bottom: 3px solid #333;
+    background-color: #eee;
+    margin-bottom: 1em;
+    justify-content: space-between;
+}
+
+.greeting {
+    margin-top: 1em;
+    font-size: 2rem;
+    text-align: center;
+    font-weight: bold;
+    color: #fff;
+}
+
+.padd {
+    margin-left: 2em;
+}
+
+.map {
+    margin-top: 50px;
+    height: 85vh;
+    max-height: 92vh;
+    width: 100%;
+    margin-bottom: 10vh;
+}
+
+@keyframes moveFromRight {
+  from { transform: translateX(100%); }
+}
+
+@keyframes moveToRight {
+  to { transform: translateX(100%); }
+}
+
+.slide-in {
+  animation: moveFromRight 0.4s ease both;
+}
+
+.slide-out {
+  animation: moveToRight 0.4s ease both;
+}
+
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/materialicons/v85/flUhRq6tzZclQEJ-Vdg-IuiaDsNc.woff2) format('woff2');
+}
+
+.material-icons a {
+    text-decoration: none;
+}
+
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-feature-settings: 'liga';
+  -webkit-font-smoothing: antialiased;
+}
+
+// @media only screen and (max-height: 740px) {
+//     .map {
+//         height: 300px;
+//     }
+// }

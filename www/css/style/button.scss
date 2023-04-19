@@ -1,0 +1,53 @@
+
+.button,
+a .button {
+    color: #fff;
+    background-color: $pop-color;
+    text-decoration: none;
+    font-size: 1.4rem;
+    font-weight: bolder;
+    padding: 0.5rem 1rem;
+    text-align: center;
+    border-radius: 0.3rem;
+    line-height: 2;
+}
+
+.button-two {
+    color: #000;
+    background-color: #eee;
+    text-decoration: none;
+    font-size: 1.3rem;
+    padding: 0.5rem 1rem;
+    text-align: center;
+    border-radius: 0.3rem;
+    line-height: 2;
+    margin-top: 1em;
+}
+
+input[type=submit] {
+    border: none;
+}
+
+.button:hover {
+    background-color: #fff;
+    color: #333;
+    background-image: none;
+}
+
+.button:active {
+    background-color: #ccc;
+    background-image: none;
+}
+
+.right {
+    font-size: 2em;
+    padding-right: 1em;
+    float: right;
+}
+
+// @media only screen and (max-width: 668px) {
+//     .button,
+//     .button-two {
+//         width: 100%;
+//     }
+// }

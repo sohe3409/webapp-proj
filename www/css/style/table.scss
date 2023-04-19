@@ -1,0 +1,105 @@
+.table {
+    margin-top: 150px;
+    margin-bottom: 50px;
+    box-sizing: border-box;
+    border-collapse: collapse;
+    width: 100%;
+    overflow-x: hidden;
+    thead tr {
+        position: fixed;
+        background-color: #fff;
+        height: 30px;
+        top: 110px;
+        margin-bottom: 10px;
+        border-bottom: 1px solid #ccc;
+        font-weight: normal;
+        font-size: 1.2rem;
+        padding: 5px;
+    }
+    tr {
+        width: 100%;
+        color: #000;
+        grid-gap: 15px;
+        align-items: center;
+        display: grid;
+        grid-template-columns: 10% 60% 10% 10%;
+    }
+    th .f,
+    td .f {
+        grid-column: 1;
+    }
+    th .s,
+    td .s {
+        grid-column: 2;
+    }
+    th .t,
+    td .t {
+        grid-column: 4;
+    }
+    tr th,
+    tr td {
+        white-space: nowrap;
+        padding: 0.4rem 0.8rem;
+        text-align: left;
+    }
+    .number-cell {
+        text-align: right;
+    }
+    .adv {
+        text-decoration: line-through;
+    }
+    .est {
+        font-weight: bold;
+    }
+}
+
+.delay {
+    margin-top: 80px;
+    text-decoration: none;
+}
+
+.table-scroll {
+  width: 100%;
+  display: block;
+  overflow-x: auto;
+}
+
+.line {
+    margin-left: 18%;
+    width: 80%;
+    height: 0.1px;
+    border-top: 0px;
+    color: #eee;
+}
+
+
+.table-cities {
+    box-sizing: border-box;
+    border-collapse: collapse;
+    width: 100%;
+    font-family: $text;
+    th {
+        text-align: left;
+    }
+    hr {
+      border:none;
+      height: 40px;
+     	width: 100%;
+    	margin-top: 0;
+    	border-bottom: 1px solid #ccc;
+    	box-shadow: 0 20px 20px -20px #333;
+    }
+    th,
+    td {
+        background-color: #fff;
+        white-space: nowrap;
+        padding: 0.8em 0.8rem;
+    }
+    .number-cell {
+        text-align: right;
+    }
+    a {
+        text-decoration: none;
+        color: #000;
+    }
+}
